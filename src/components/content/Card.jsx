@@ -8,7 +8,7 @@ export default function Box() {
     return (
         <div>
             <Layout>
-                <img className={style.img} src={img} alt="no image" />
+                <img className={style.img} src={img} alt="not found" />
             </Layout>
             <p>Batman</p>
             <div className={style.details}>
