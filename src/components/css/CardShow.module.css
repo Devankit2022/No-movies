@@ -1,0 +1,11 @@
+.container {
+    position: relative;
+}
+.card {
+    z-index: 5;
+}
+.card_on_hover {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}

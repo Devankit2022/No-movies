@@ -1,0 +1,29 @@
+.main_main_conatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+}
+.h1 {
+    color: white;
+    font-size: 17px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.p {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: rgb(125, 126, 127);
+    font-size: 15px;
+}
+.p:hover {
+    color: rgb(173, 174, 174);
+}

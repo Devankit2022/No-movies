@@ -1,0 +1,33 @@
+.img {
+    height: 250px;
+    width: 165px;
+    border-radius: 10px;
+}
+.details {
+    margin-top: 5px;
+    color: rgb(158, 158, 158);
+    width: 165px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.details_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dot {
+    padding-top: 3px;
+}
+.movie {
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,24 @@
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.h1 {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.h3 {
+    color: rgb(117, 114, 114);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.p {
+    color: rgb(117, 114, 114);
+    font-size: 0.8rem;
+}
