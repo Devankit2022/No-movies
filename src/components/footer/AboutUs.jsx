@@ -1,9 +1,9 @@
 import React from 'react';
-import style from '../css/AboutUs.module.css';
+import style from './style.module.css';
 
 export default function AboutUs() {
     return (
-        <div className={style.container}>
+        <div className={style.containerAbout}>
             <p className={style.h1}>About Us</p>
             <p className={style.para}>
                 <b>Nomovies</b> is free streaming website with zero ads, it

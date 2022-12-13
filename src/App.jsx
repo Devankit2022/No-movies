@@ -1,18 +1,13 @@
-import React from 'react';
 import './style.css';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Recomended from './components/content/Recomended';
-import LatestMovies from './components/content/LatestMovies';
-import LatestTVSeries from './components/content/LatestTVSeries';
+import Header from './components/header';
+import Footer from './components/footer';
+import Content from './components/content';
 
 export default function App() {
     return (
         <div>
             <Header />
-            <Recomended />
-            <LatestMovies />
-            <LatestTVSeries />
+            <Content />
             <Footer />
         </div>
     );

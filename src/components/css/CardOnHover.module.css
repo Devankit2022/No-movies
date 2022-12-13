@@ -1,9 +1,0 @@
-.play {
-    height: 60px;
-    width: 60px;
-    border-radius: 60px;
-    background-color: rgb(6, 6, 179);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

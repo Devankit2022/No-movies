@@ -1,3 +1,23 @@
+.container {
+    position: relative;
+}
+.card {
+    z-index: 5;
+}
+.card_on_hover {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.play {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: rgb(6, 6, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img {
     height: 250px;
     width: 165px;

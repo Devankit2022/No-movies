@@ -1,8 +1,8 @@
-import React from 'react';
 import Layout from './Layout';
-import style from '../css/CardOnHover.module.css';
+import style from './CardShow.module.css';
 import { RxTriangleRight } from 'react-icons/rx';
-const CardOnHover = () => {
+
+export default function CardOnHover() {
     return (
         <Layout styles={layer}>
             <div className={style.play}>
@@ -10,9 +10,7 @@ const CardOnHover = () => {
             </div>
         </Layout>
     );
-};
-
-export default CardOnHover;
+}
 
 const layer = {
     backgroundColor: '#38363682',

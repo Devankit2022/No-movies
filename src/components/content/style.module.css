@@ -1,19 +1,11 @@
-.container {
-    background-color: rgb(58, 57, 57);
-    padding: 10px 20px;
-}
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .p {
     font-weight: lighter;
     font-size: 1.5rem;
 }
-.hr {
-    border: 0.3px solid rgb(90, 89, 89);
-    width: 130px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    column-gap: 15px;
 }
 .ul {
     margin-left: 30px;
@@ -43,10 +35,13 @@
     color: white;
     width: 70px;
 }
-
-.cards {
+.header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+}
+.hr {
+    border: 0.3px solid rgb(139, 139, 139);
+    width: 75%;
+    margin-top: 4px;
 }

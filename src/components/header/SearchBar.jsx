@@ -1,5 +1,4 @@
-import React from 'react';
-import style from '../css/SearchBar.module.css';
+import style from './style.module.css';
 import { HiSearch } from 'react-icons/hi';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 

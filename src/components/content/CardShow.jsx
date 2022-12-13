@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CardOnHover from './CardOnHover';
 import Card from './Card';
-import style from '../css/CardShow.module.css';
+import style from './CardShow.module.css';
 
-export default function CardShow() {
+export default function CardShow(props) {
     const [show, setshow] = useState(false);
     const handleHover = () => {
         setshow((state) => !state);
@@ -15,7 +15,12 @@ export default function CardShow() {
                 onMouseEnter={handleHover}
                 onMouseLeave={handleHover}
             >
-                <Card />
+                <Card
+                    image={props.image}
+                    title={props.title}
+                    releaseDate={props.releaseDate}
+                    type={props.type}
+                />
             </div>
             <div
                 className={style.card_on_hover}

@@ -1,6 +1,5 @@
-import React from 'react';
 import logo from '../../assets/logo.png';
-import style from '../css/Navbar.module.css';
+import style from './style.module.css';
 import { BiUserCircle } from 'react-icons/bi';
 
 export default function Navbar() {
