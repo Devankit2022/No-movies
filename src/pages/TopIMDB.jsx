@@ -1,32 +1,26 @@
-import Header from '../header';
-import SearchBox from '../header/SearchBox';
-import ContentLister from './ContentLister';
-import Footer from '../footer';
-
-export default function Index({ trending, topMovies, topTVSeries }) {
+import ContentLister from '../components/content/ContentLister';
+import Header from '../components/header';
+export default function TopIMDB({ topMovies, topTVSeries }) {
     return (
         <>
             <Header />
-            <SearchBox />
             <div
                 style={{
                     backgroundColor: 'rgb(58, 57, 57)',
                     padding: '20px 15px',
                 }}
             >
-                <ContentLister title={'Trending'} option data={trending} />
                 <ContentLister
-                    title={'Top Movies'}
+                    title={'IMBD Top Movies'}
                     data={topMovies}
                     type="Movie"
                 />
                 <ContentLister
-                    title={'Top Series'}
+                    title={'IMDB Top Series'}
                     data={topTVSeries}
                     type="Series"
                 />
             </div>
-            <Footer />
         </>
     );
 }

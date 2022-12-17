@@ -5,7 +5,7 @@ export default function Layout({ children, styles }) {
 const style = {
     height: 250,
     width: 170,
-    border: 'none',
+    border: '1px solid #3c3b3b',
     borderRadius: 10,
     margin: '20px 0px 10px 0px',
     display: 'flex',

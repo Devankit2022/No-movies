@@ -5,7 +5,7 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
-    column-gap: 15px;
+    column-gap: 17px;
 }
 .ul {
     margin-left: 30px;
@@ -44,4 +44,9 @@
     border: 0.3px solid rgb(139, 139, 139);
     width: 75%;
     margin-top: 4px;
+}
+.link {
+    text-decoration: none;
+    color: rgb(158, 154, 154);
+    font-size: 13px;
 }

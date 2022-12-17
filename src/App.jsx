@@ -1,14 +1,10 @@
 import './style.css';
-import Header from './components/header';
-import Footer from './components/footer';
-import Content from './components/content';
+import Routing from './Routing';
 
 export default function App() {
     return (
         <div>
-            <Header />
-            <Content />
-            <Footer />
+            <Routing />
         </div>
     );
 }

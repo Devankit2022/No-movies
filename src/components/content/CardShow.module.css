@@ -14,13 +14,14 @@
     width: 60px;
     border-radius: 60px;
     background-color: rgb(6, 6, 179);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .img {
     height: 250px;
-    width: 165px;
+    width: 170px;
     border-radius: 10px;
 }
 .details {
@@ -33,6 +34,7 @@
     justify-content: space-between;
 }
 .details_container {
+    padding: 0px 2px;
     display: flex;
     flex-direction: row;
     align-items: center;

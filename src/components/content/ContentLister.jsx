@@ -1,6 +1,8 @@
 import CardShow from './CardShow';
 import Option from './Option';
 import style from './style.module.css';
+import img from '../../assets/not-found.jpg';
+import { imageBaseURL } from '../../constants';
 
 export default function ContentLister({ title, option, data, type }) {
     return (
@@ -17,7 +19,11 @@ export default function ContentLister({ title, option, data, type }) {
                 {data.map((item) => (
                     <CardShow
                         key={item.id}
-                        image={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
+                        image={
+                            !item.poster_path
+                                ? img
+                                : `${imageBaseURL}/${item.poster_path}`
+                        }
                         title={item.name || item.title}
                         releaseDate={item.first_air_date || item.release_date}
                         type={
@@ -27,18 +33,9 @@ export default function ContentLister({ title, option, data, type }) {
                                 ? 'Series'
                                 : 'Movie'
                         }
+                        id={item.id}
                     />
                 ))}
-                {/* <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow />
-                <CardShow /> */}
             </div>
         </div>
     );

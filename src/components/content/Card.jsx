@@ -10,12 +10,10 @@ export default function Card(props) {
             <Layout>
                 <img className={style.img} src={props.image} alt="not found" />
             </Layout>
-            <p>{printTitle(props.title)}</p>
+            <p style={{ marginLeft: 3 }}>{printTitle(props.title)}</p>
             <div className={style.details}>
                 <div className={style.details_container}>
                     <span>{props.releaseDate}</span>
-                    {/* <BsDot size={20} className={style.dot} /> */}
-                    {/* <span>161 min</span> */}
                 </div>
                 <span className={style.movie}>{props.type}</span>
             </div>

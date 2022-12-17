@@ -2,6 +2,7 @@ import { useState } from 'react';
 import CardOnHover from './CardOnHover';
 import Card from './Card';
 import style from './CardShow.module.css';
+import { Link } from 'react-router-dom';
 
 export default function CardShow(props) {
     const [show, setshow] = useState(false);
@@ -27,7 +28,11 @@ export default function CardShow(props) {
                 onMouseEnter={handleHover}
                 onMouseLeave={handleHover}
             >
-                {show && <CardOnHover />}
+                {show && (
+                    <Link to={`/about/${props.type}/${props.id}`}>
+                        <CardOnHover />
+                    </Link>
+                )}
             </div>
         </div>
     );
